@@ -6,54 +6,56 @@
   
   body {
     font-family:"Poppins", sans-serif;
-    background-image: url("images/placeholder/background.png");
-    background-color: #f5f5f5;
-    display: flex;
+    background-color:#fafafa ;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
-  .container {
-    width: 85%;
-    margin: auto;
-    overflow: hidden;
-  }
   
-  header {
-    position: fixed;
-    margin-top: -650px;
-    width: 100%;
-    padding: 5px 0;
-    box-shadow: 0 0 30px #44ffff;
-    background-color: #ededed;
-  }
-  
-  .header-wrap {
-    display: flex;
-    justify-content: space-between;
-  }
-  .logo {
-    width: 20%;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 20%;
-    cursor: pointer;
-  }
-  
-  .logo span {
-    font-size: 30px;
-    font-weight: 900;
-    color: #f83b3b;
-    font-family: "Berkshire Swash", cursive;
-    cursor: pointer;
-  }
-  
+.container {
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 10px #666;
+  background-color: #ededed;
+  z-index: 100;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 20%;
+  cursor: pointer;
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: 900;
+  color: #f83b3b;
+  font-family: "Berkshire Swash", cursive;
+  cursor: pointer;
+}
+
   .menu-box {
     width: 75%;
+    margin-top: 2px;
+    padding-bottom: 2px;
   }
   
   .menu-box ul {
@@ -77,13 +79,13 @@
     color: #f83b3b;
   }
   .container1 {
-    background-image: url("images/placeholder/background.png");
     width: 100%;
     max-width: 550px;
     margin-top: 100px;
+    margin: 100px auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .order-form {
@@ -95,28 +97,28 @@
     margin-bottom: 20px;
   }
   .order-summary{
-    color: #bbb;
+    color: #555;
   }
   h2 {
     margin-bottom: 10px;
     font-size: 1.2em;
-    color: #ddd;
+    color: #333;
   }
   .customer-details h2{
     padding-bottom: 25px;
   }
   input[type="text"], input[type="email"], textarea {
     background: transparent;
-    color: #fdfdfd;
+    color: #333;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #444;
+    border: 2px solid #aaa;
     border-radius: 4px;
     font-size: 1em;
   }
   input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
-    border: 1px solid #ddd;
+    border: 2px solid #444;
   }
   textarea {
     height: 80px;
@@ -128,7 +130,7 @@
   }
   
   button.submit-btn {
-    background-color: #ff4999;
+    background-color: #218838;
     color: white;
     padding: 12px 40px;
     font-size: 1.2em;
@@ -139,7 +141,7 @@
   }
   
   button.submit-btn:hover {
-    background-color: #218838;
+    background-color: #217838;
   }
   .button{
     display: flex;
@@ -147,21 +149,47 @@
     justify-content: space-between;
   }
   button.cancel-btn {
-    background-color: #f49944;
+    background-color: #f83b3b ;
     color: white;
     padding: 12px 30px;
     font-size: 1.2em;
     border: none;
-    border-radius: 2px;
+    border-radius: 4%;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
   button.cancel-btn:hover {
-    background-color:#f83b3b ;
+    background-color:#e83b3b;
   }
   #total-price {
     font-weight: bold;
     color: #28a745;
   }
-  
+  .footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align text */
+    position: relative; /* Position relative for layout */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer-container {
+    max-width: 800px; /* Max width for the content */
+    margin: 0 auto; /* Center the footer */
+    padding: 0 20px; /* Padding for left and right */
+}
+
+.contact-info {
+    margin-bottom: 10px; /* Space between sections */
+}
+
+.contact-info h2 {
+    margin: 0; /* Remove default margin */
+}
+
+.copyright {
+    font-size: 14px; /* Smaller font size for copyright */
+}

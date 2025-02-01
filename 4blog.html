@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger World</title>
+    <link rel="shortcut icon" href="images/main/favicon.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="1hamburger.css" />
+</head>
+<style>
+body{
+    overflow-x: hidden;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 120px;
+}
+aside{
+    margin-left: 15px;
+}
+.blog-posts {
+    flex: 3;
+}
+
+.post {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.list{
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="logo">
+                    <img src="images/main/logo.png" alt=""> <span>Hamburger</span>
+                </div>
+                <nav class="menu-box">
+                    <ul>
+                        <li><a href="1hamburger.html">Home</a></li>
+                        <li><a href="2order.html">Foods</a></li>
+                        <li><a href="4blog.html">Blog</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-posts">
+            <article class="post">
+                <h2>10 Mouth-Watering Burger Recipes to Try at Home</h2>
+                <h4>Delicious Burger</h4>
+                <p>Discover our top 10 burger recipes that will make your taste buds dance! From classic cheeseburgers to gourmet creations, we have something for everyone.</p>
+                <a href="post1.html" class="read-more">Read More</a>
+            </article>
+
+            <article class="post">
+                <h2>The History of the Hamburger: From Invention to Icon</h2>
+                <h4>History of Hamburger</h4>
+                <p>Welcome and Join us on a journey through time as we explore the fascinating history of the hamburger and how it became a global sensation.</p>
+                <a href="post2.html" class="read-more">Read More</a>
+            </article>
+
+            <article class="post">
+                <h2>5 Tips for Grilling the Perfect Burger</h2>
+                <h4>Grilling Burgers</h4>
+                <p>Wonder makes Grilling burgers can be an art. Here are five essential tips to ensure your burgers are juicy, flavorful, and cooked to perfection.</p>
+                <a href="post3.html" class="read-more">Read More</a>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <h3>About Us</h3>
+            <p>At Burger Haven, we are passionate about burgers! Join us as we share recipes, tips, and the latest news in the burger world.</p>
+
+            <h3>Follow Us</h3>
+            <ul class="list">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Burger Haven. All rights reserved.</p>
+    </footer>
+</body>
+</html>
